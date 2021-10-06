@@ -1,12 +1,14 @@
 import { Category } from "../model/Category";
+import {
+    ICategoriesRepository,
+    ICreateCategoryDTO,
+} from "./ICategoriesRepository";
 
-// DTO - Data transfer Object
-interface ICreateCategoryDTO {
-    name: string;
-    description: string;
-}
+/**
+ * Repositório Pai, serve de modelo para novas implementações
+ */
 
-class CategoriesRepository {
+class CategoriesRepository implements ICategoriesRepository {
     private categories: Category[];
 
     constructor() {

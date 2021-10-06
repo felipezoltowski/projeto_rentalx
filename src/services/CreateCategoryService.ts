@@ -1,4 +1,4 @@
-import { CategoriesRepository } from "../repositories/CategoriesRepository";
+import { ICategoriesRepository } from "../repositories/ICategoriesRepository";
 
 interface IRequest {
     name: string;
@@ -10,8 +10,12 @@ interface IRequest {
  * [x] - Acessar o repositório
  * [x] - Retornar algo
  */
+
+/**
+ * Realiza o processamento da rota e valida campos
+ */
 class CreateCategoryService {
-    constructor(private categoriesRepository: CategoriesRepository) {}
+    constructor(private categoriesRepository: ICategoriesRepository) {}
 
     execute({ description, name }: IRequest): void {
         const categoryAlreadyExists =
