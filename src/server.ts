@@ -1,6 +1,8 @@
 import express from "express";
+import swaggerUi from "swagger-ui-express";
 
 import { router } from "./routes";
+import swaggerFile from "./swagger.json";
 
 const app = express();
 
@@ -10,6 +12,8 @@ app.use(express.json());
 app.get("/", (request, response) => {
     return response.json({ message: "Hello World!" });
 });
+
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 app.use(router);
 
