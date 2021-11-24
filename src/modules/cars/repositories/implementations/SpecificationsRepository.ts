@@ -2,7 +2,7 @@
  * Repositório Pai, serve de modelo para novas implementações
  */
 
-import { Specification } from "../../model/Specification";
+import { Specification } from "../../entities/Specification";
 import {
     ICreateSpecificationDTO,
     ISpecificationRepository,

@@ -1,4 +1,4 @@
-import { Specification } from "../model/Specification";
+import { Specification } from "../entities/Specification";
 
 /**
  * Contrato do repositório, implementa novas interfaces para uso
