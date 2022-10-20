@@ -11,7 +11,6 @@ export class CreateUsers1666209537728 implements MigrationInterface {
                         name: "id",
                         type: "uuid",
                     },
-
                     {
                         name: "name",
                         type: "varchar",
