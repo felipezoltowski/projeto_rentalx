@@ -1,4 +1,5 @@
 import { ICreateUserDTO } from "../dtos/ICreateUserDTO";
+import { User } from "../entities/User";
 /**
  * Contrato do repositório, implementa novas interfaces para uso
  * SubTipo do repositório pai
@@ -6,7 +7,7 @@ import { ICreateUserDTO } from "../dtos/ICreateUserDTO";
 
 interface IUsersRepository {
     create(data: ICreateUserDTO): Promise<void>;
-    // findByName(name: string): Promise<User>;
+    findByEmail(email: string): Promise<User>;
     // list(): User[];
 }
 
