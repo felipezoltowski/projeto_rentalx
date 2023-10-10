@@ -1,5 +1,5 @@
 import { ICreateUserDTO } from "../dtos/ICreateUserDTO";
-import { User } from "../entities/User";
+import { User } from "../infra/typeorm/entities/User";
 /**
  * Contrato do repositório, implementa novas interfaces para uso
  * SubTipo do repositório pai

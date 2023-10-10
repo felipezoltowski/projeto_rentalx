@@ -1,19 +1,12 @@
 import { inject, injectable } from "tsyringe";
 
-import { AppError } from "@errors/AppError";
+import { AppError } from "@shared/errors/AppError";
 import { ICategoriesRepository } from "@modules/cars/repositories/ICategoriesRepository";
 
 interface IRequest {
     name: string;
     description: string;
 }
-/**
- * [x] - Definir tipo de retorno
- * [x] - Alterar retorno de erro
- * [x] - Acessar o repositório
- * [x] - Retornar algo
- */
-
 /**
  * Realiza o processamento da rota e valida campos
  */

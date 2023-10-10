@@ -1,4 +1,4 @@
-import { Category } from "../entities/Category";
+import { Category } from "../infra/typeorm/entities/Category";
 
 /**
  * Contrato do repositório, implementa novas interfaces para uso
