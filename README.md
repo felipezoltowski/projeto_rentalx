@@ -6,8 +6,6 @@ Desenvolvimento do projeto RentalX da Trilha de Node JS, trabalhando com código
 **RF** => Requisitos funcionais
 Deve ser possível cadastrar um novo carro.
 
-**RFN** => Requisitos não funcionais
-
 **RN** => Regra de negócio
 Não deve ser possível cadastrar um carro com uma placa já existente.
 O carro deve ser cadastrado com disponibilidade por padrão.
