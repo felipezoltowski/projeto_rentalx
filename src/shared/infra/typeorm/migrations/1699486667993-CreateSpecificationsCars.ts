@@ -29,7 +29,7 @@ export class CreateSpecificationsCars1699486667993
                     name: "FKSpecificationCar",
                     referencedTableName: "specifications",
                     referencedColumnNames: ["id"],
-                    columnNames: ["category_id"],
+                    columnNames: ["specification_id"],
                     onDelete: "SET NULL",
                     onUpdate: "SET NULL"
                 })
